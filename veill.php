@@ -1,6 +1,8 @@
 <?php
 /**
  * @author RAJERISON Julien
+ *
+ * Final class et methode
  */
 
 /**
