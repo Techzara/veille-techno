@@ -24,6 +24,9 @@
   * \n        => midina andalana
   * \t        => Tabulation
   * \.        => Consideration an'ny . test\.com
+  * \s        => Maka ny espace 
+  * \S        => Maka iza mots tsisy espace
+  * \W        => Maka izay tsy mots alphanumérique
   */
 
   /**
@@ -43,5 +46,12 @@
  */
 
 var matchUrl =/(\.com|\.fr)$/
-console.log(matchUrl.test("www.google.com"));  //true
+var matchUrl2 =/^\s/
+var matchUrl3 =/^\S/
+var match4  = /\W/
+console.log(matchUrl.test("www.google.com")); //true
 console.log(matchUrl.test("www.yahoo.za"));   //false
+console.log(matchUrl3.test(" www.yahoo.fr")); //true satria misy espace eo alohany
+console.log(matchUrl3.test(" www.yahoo.fr")); //false satria misy espace eo alohany
+console.log(match4.test("*/-+\.#'~"));        // true satria tsy alphanumérique ireo mots ireo
+
