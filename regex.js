@@ -18,15 +18,16 @@
 
  /**
   * [syntaxe] =>  [fanazavana]
-  * .         => izay caractere rehetra ohatra /.a/ -> "ma"(marina), "androany"(diso satria tsisy soratra eo alohany)
-  * \w        => mitovy amin'ny hoe [a-zA-Z0-9_]
-  * \d        => mitovy amin'ny hoe [0-9]
-  * \n        => midina andalana
+  * .         => Izay caractère rehetra ohatra /.a/ -> "ma"(marina), "androany"(diso satria tsisy soratra eo alohany)
+  * \w        => Mitovy amin'ny hoe [a-zA-Z0-9_]
+  * \W        => Mandray izay caratère rehetra tsy alphanumérique
+  * \d        => Mitovy amin'ny hoe [0-9]
+  * \D        => Mandray izay caractère rehetra tsy numérique, izany hoe izay [0-9] rehetra
+  * \n        => Midina andalana
   * \t        => Tabulation
   * \.        => Consideration an'ny . test\.com
-  * \s        => Maka ny espace 
-  * \S        => Maka iza mots tsisy espace
-  * \W        => Maka izay tsy mots alphanumérique
+  * \s        => Mandray ny karazana espace rehetra, tafiditra ao anatiny ny \t 
+  * \S        => Mandray izay caractère tsy espace rehetra
   */
 
   /**
