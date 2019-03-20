@@ -1,2 +1,2 @@
-# veill-techno
-Veille Techno des membres Techzara
+# Veille Techno
+Veille Techno des membres de Techzara.
