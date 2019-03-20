@@ -32,11 +32,11 @@
 
   /**
    * [syntaxe]          => [fanazavana]                             -> [ohatra]
-   * [a-z][0-9][A-Z]    => Izany hoe misy mots telo farafahakeliny  -> madama(marina), ma(diso) 
-   * {min,max}          => Eo anelanelan'ny min sy max              -> {5,9}, mamama(marina), mama(diso)
-   * {min,}             => Valeur min à l'infini                    -> {6,}, mamamammamamamammama(marina), mamam(diso)
-   * {,max}             => 0 à max                                  -> {,6}, mamamammamamamammama(diso), mamam(marina)
-   * {nombre}           => Isany farafahakely                       -> {6}, mama(diso), aamamamam(marina)
+   * [a-z][0-9][A-Z]    => izany hoe misy mots telo farafahakeliny  -> m9A(marina) , mam(diso)
+   * {min,max}          => eo anelanelan'ny min sy max              -> {5,9} , mamama(marina),mama(diso)
+   * {min,}             => valeur min à l'infini                    -> {6,} , mamamammamamamammama(marina), mamam(diso)
+   * {,max}             => 0 à max                                  -> {,6} , mamamammamamamammama(diso), mamam(marina)
+   * {nombre}           => isany farafahakely                       -> {6}  , mama(diso), aamamamam(marina)
    */
 
 /**
@@ -47,12 +47,13 @@
  */
 
 var matchUrl =/(\.com|\.fr)$/
-var matchUrl2 =/^\s/
 var matchUrl3 =/^\S/
 var match4  = /\W/
+var match5 = /[a-z][0-9][A-Z]/
 console.log(matchUrl.test("www.google.com")); //true
 console.log(matchUrl.test("www.yahoo.za"));   //false
 console.log(matchUrl3.test(" www.yahoo.fr")); //true satria misy espace eo alohany
 console.log(matchUrl3.test(" www.yahoo.fr")); //false satria misy espace eo alohany
-console.log(match4.test("*/-+\.#'~"));        //true satria tsy alphanumérique ireo mots ireo
+console.log(match4.test("*/-+\.#'~"));        // true satria tsy alphanumérique ireo mots ireo
+console.log(match5.test('a9A'));              // true
 
