@@ -1,2 +1,2 @@
 # Veille Techno
-Veille Techno des membres de Techzara.
+Veille Techno autour du dev.
