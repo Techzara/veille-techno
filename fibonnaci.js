@@ -1,10 +1,17 @@
 /*
 * RAJERISON Julien
-* BIG 0 Algorithm fibonacci
+* BIG 0 notation && Algorithm fibonacci
 * n  0 1 2 3 4 5 6 7
 * xn 0 1 1 2 3 5 8 13
 * xn = |(xn-1) + (xn-2)|
 */
+
+// Is constant <Time complexity Constant | Space complexity = 0(1) Constant>
+function isConstantExec(enumerate)
+{
+	return enumerate[0] == null;
+}
+console.log(isConstantExec(5))
 
 // Recursion <Time complexity 0(2^N) | Space complexity = 0(n)>
 function Fibonacci(enumerate)
@@ -45,3 +52,4 @@ function fibonacciMemoization(enumerate, memory) {
   return memory[enumerate] = fibonacciMemoization(enumerate - 1, memory) + fibonacciMemoization(enumerate - 2, memory);
 }
 console.log(fibonacciMemoization(5,2))
+
