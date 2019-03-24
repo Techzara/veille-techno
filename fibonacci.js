@@ -1,6 +1,6 @@
 /*
 * @Author RAJERISON Julien
-* @Description BIG-O notation && Algorithm fibonacci
+* @Description BIG-O notation && Approach of fibonacci Algorithm
 *----------------------------------- 
 *         TABLEAU FIBONACCI
 *-----------------------------------
