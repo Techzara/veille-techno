@@ -20,10 +20,10 @@ if (($h = fopen("{$_file}", "r")) !== FALSE) {
   * Shift the first array if not needed
   **/
   array_shift($the_big_array);
-  foreach ($the_big_array as $value) {
+  foreach ($your_big_array as $value) {
     // Your own logique to set data
     
-    for ($a = 0; $a < count($the_big_array); $a++) {
+    for ($a = 0; $a < count($your_big_array); $a++) {
       // your own logique to insert data
     }
   }
