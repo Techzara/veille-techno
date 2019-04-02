@@ -19,7 +19,9 @@ if (($h = fopen("{$_file}", "r")) !== FALSE) {
   /**
   * Shift the first array if not needed
   **/
-  array_shift($the_big_array);
+  array_shift($your_big_array);
+  
+  // foreach your big array content
   foreach ($your_big_array as $value) {
     // Your own logique to set data
     
