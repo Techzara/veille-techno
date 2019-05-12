@@ -1,0 +1,125 @@
+/**
+ * Type des données primitifs
+ * 
+ * Boolean -> résultats assertion logique -> true pour vraie logique , false pour faux logique
+ * Null -> Valeur null 
+ * Undefined -> non défini
+ * number -> nombre
+ * string -> chaine de caractere
+ * 
+ * Type objet
+ */
+
+/**
+ * New array
+ */
+var test = new Array(1,2,4)
+
+/**
+ * Create array from params{any}
+ */
+Array.from(params)
+
+/**
+ * Create array from args{any}
+ */
+Array.of(1,"1");
+
+/**
+ * Operate right to left
+ */
+test.reduce(( item, value ) => item + value, 1)
+
+/**
+ * Check if item is operate by function params
+ * Bool 
+ */
+test.some( item => item < 6)
+
+/**
+ * Check if all element is passed by test
+ * Bool
+ */
+test.every( item => item < 5)
+
+/**
+ * Find element in array
+ * Bool 
+ */
+test.includes(2)
+
+/**
+ * Concat array with other value 
+ */
+test.concat(new Array(6,8))
+
+/**
+ * Filtre
+ */
+test.filter( item => item < 8 )
+
+/**
+ * Sort descending
+ */
+test.sort((a , b ) =>a < b ? 1 : -1 )
+
+/**
+ * Sort ascending
+ */
+test.sort(( a , b )=> a < b ? -1 : 1 )
+
+/**
+ * Push element to array
+ */
+test.push()
+
+/**
+ * Remove element in middle of array
+ */
+test.splice(0,2)
+
+/**
+ * Couper un array
+ */
+test.slice(0,3)
+
+/**
+ * Add element in middle of array
+ */
+test.splice(1,2,"Hihi")
+
+// Difference betwen this splice is the third parameters means add value
+
+/**
+ * add element at first
+ */
+test.unshift("a")
+
+/**
+ * Remove first element
+ */
+test.shift()
+
+/**
+ * remove last element
+ */
+test.pop()
+
+/**
+ * Append all element
+ */
+test.toString()
+
+/**
+ * Join array with string
+ */
+test.join('-')
+
+/**
+ * Itterate the array then add the provide function in all item 
+ */
+test.map(item => item + 1)
+
+test.forEach(function(item,index){
+    console.log(item,index);
+})
