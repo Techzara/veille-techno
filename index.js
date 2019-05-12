@@ -120,6 +120,44 @@ test.join('-')
  */
 test.map(item => item + 1)
 
+/**
+ * Foreach item from array
+ */
 test.forEach(function(item,index){
     console.log(item,index);
 })
+
+/** ------------------------------
+ * Localstorage manipulation
+ * -------------------------------
+ */
+
+/**
+ * Add item to LocalStorage
+ */
+localStorage.setItem("mickie","jul");
+
+/**
+ * Set localstorage array element
+ */
+localStorage.setItem("array",JSON.stringify(test));
+
+/**
+ * Get localstorage array
+ */
+JSON.parse(localStorage.getItem("array"))
+
+/**
+ * Get item from localStorage
+ */
+localStorage.getItem("mickie");
+
+/**
+ * Remove item from localstorage
+ */
+localStorage.removeItem("mickie");
+
+/**
+ * clear all LocalStorage 
+ */
+localStorage.clear();
