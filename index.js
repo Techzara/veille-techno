@@ -68,6 +68,26 @@ test.sort((a , b ) =>a < b ? 1 : -1 )
  */
 test.sort(( a , b )=> a < b ? -1 : 1 )
 
+var sum = 0;
+/**
+* Sum of array
+*/
+for (var i=0;i<test.length;i++){
+        sum += test[i];
+}
+// OR
+var sumArray = test.reduce( (a, b) => { return a + b })
+
+/**
+* Min value of array
+*/
+var minValue = test.reduce( (a, b) => { return a < b ? a : b })
+
+/**
+* Max value of array
+*/
+var maxValue = test.reduce( (a, b) => { return a > b ? a : b })
+
 /**
  * Push element to array
  */
